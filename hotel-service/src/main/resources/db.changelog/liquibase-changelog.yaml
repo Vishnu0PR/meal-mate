@@ -1,0 +1,5 @@
+databaseChangeLog:
+
+  - include:
+      file: 0001h_hotel_menu.sql
+      relativeToChangelogFile: true

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="order-service" />
+        <module name="dicovery-server" />
+        <module name="gateway" />
+        <module name="hotel-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-server" target="11" />
+      <module name="dicovery-server" target="11" />
+      <module name="gateway" target="11" />
+      <module name="hotel-service" target="11" />
+      <module name="order-service" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
+      <module name="dicovery-server" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="hotel-service" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+    </option>
+  </component>
+</project>
