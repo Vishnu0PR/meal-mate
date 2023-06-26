@@ -14,13 +14,6 @@
         <module name="hotel-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="config-server" target="11" />
-      <module name="dicovery-server" target="11" />
-      <module name="gateway" target="11" />
-      <module name="hotel-service" target="11" />
-      <module name="order-service" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

@@ -12,3 +12,14 @@ spring:
         native:
           search-locations: classpath:\configurations
 
+# we can config this in git also server.git,uri,search-paths:
+
+#management:
+#  endpoint:
+#    web:
+#      exposure:
+#        include: "*"
+#      expose: "*"
+
+
+

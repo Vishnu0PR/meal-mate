@@ -27,3 +27,5 @@ spring:
     name: hotel-service
 server:
   port: 8090
+#  servlet:
+#    context-path: /hotel-service
