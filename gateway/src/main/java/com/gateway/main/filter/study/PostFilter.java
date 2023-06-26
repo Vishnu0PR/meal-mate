@@ -1,4 +1,4 @@
-package com.gateway.main.filter;
+package com.gateway.main.filter.study;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -22,6 +22,7 @@ spring:
                 args:
                   name: fallBack
                   fallbackUri: forward:/fall-back
+              - name: JWTAuthenticationFilter
               - name: PreFilter
               - name: PostFilter
 
@@ -34,4 +35,22 @@ spring:
                 args:
                   name: fallBack
                   fallbackUri: forward:/fall-back
+              - name: JWTAuthenticationFilter
               - name: PreFilter
+
+
+          - id: user-service
+            uri: http://localhost:8001
+            predicates:
+              - Path=/auth/**,/api/v1/user/**
+            filters:
+              - name: JWTAuthenticationFilter
+              - name: CircuitBreaker
+                args:
+                  name: fallBack
+                  fallbackUri: forward:/fall-back
+
+
+  jwt:
+    secret: 36763979244226452948404D635166546A576D5A7134743777217A25432A462D
+    jwtExpirationInMs: 1800000 # 30 minute

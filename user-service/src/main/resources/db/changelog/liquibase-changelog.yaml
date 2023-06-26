@@ -1,0 +1,5 @@
+databaseChangeLog:
+
+  - include:
+      file: 0001u_user_info.sql
+      relativeToChangelogFile: true
